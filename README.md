@@ -8,13 +8,15 @@ A web client demo is provided here
 ## API Key
 You will need an API Key to query the API.
 
-* **MatchColor** : Removes a quote from the CMS
+* **MatchColor** : Matches the specified color against all the markers in the product for the top matches. Either RGB or Hex is required where RGN takes precedence.
 	* Methods: GET|POST
 	* inputs:
 		* line (string) product line ID string
-        * hex (string as hex color) color to match on
+        * rgb (string as an RGB tuple) color to match on. e.g. `101,45,90`
+        * hex (string as hex color) color to match on, preceedint # is optional
 	* output: (list) top 9 matches
 * **ProductLines** : Get the full list of product lines with their IDs
+    * Methods: GET
     * inputs: none
     * output: (list) list of all the product lines
 
