@@ -22,13 +22,20 @@ to request your own API key.
 
 ## Methods
 
-* **MatchColor** : Matches the specified color against all the markers in the product for the top matches. Either RGB or Hex is required where RGN takes precedence.
+* **MatchColor** : Matches the specified color against all the markers in the product for the top matches. Either RGB or Hex is required where RGB takes precedence. The lower the DeltaE the closer the match.
 	* Methods: GET|POST
 	* inputs:
 		* line (string) product line ID string
         * rgb (string as an RGB tuple) color to match on. e.g. `101,45,90`
-        * hex (string as hex color) color to match on, preceedint # is optional
-	* output: (list) top 9 matches
+        * hex (string as hex color) color to match on, the preceeding hash is optional
+	* output: (list) top 9 matches in order of ascending DeltaE values
+    * example:
+    ```
+    {
+        "line":"copicSketch",
+        "hex":"bd3f3d"
+    }
+    ```
 * **ProductLines** : Get the full list of product lines with their IDs
     * Methods: GET
     * inputs: none
