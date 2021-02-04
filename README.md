@@ -97,3 +97,11 @@ You can report bugs and issues here.
 17. Zig Brush Markers
 
 Ohuhu is currently being added and coming soon.
+
+## Vendor Support
+
+If you are a vendor who would like to add your product color data to our API, please [contact us](https://www.raydreams.com/Home/Contact)
+
+Color matching is not limited to markers, but paints, makeup, etc.
+
+We would also love to collect UPC codes of all existing product items.
